@@ -10,13 +10,13 @@ import { DashboardModule } from './dashboard/dashboard.module';
   declarations: [
     AppComponent
   ],
+  providers: [],
+  bootstrap: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BootstrapModule,
     DashboardModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  ]
 })
 export class AppModule { }
