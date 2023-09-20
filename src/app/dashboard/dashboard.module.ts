@@ -6,16 +6,16 @@ import { BootstrapModule } from '../bootstrap.module';
 import { DashboardComponent } from './dashboard.component';
 
 @NgModule({
-  declarations: [
-    DashboardComponent,
-  ],
-  exports: [
-    DashboardComponent,
-  ],
-  imports: [
-    CommonModule,
-    DashboardRoutingModule,
-    BootstrapModule
-  ]
+    declarations: [
+        DashboardComponent,
+    ],
+    exports: [
+        DashboardComponent,
+    ],
+    imports: [
+        CommonModule,
+        DashboardRoutingModule,
+        BootstrapModule
+    ]
 })
 export class DashboardModule { }

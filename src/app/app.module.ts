@@ -8,17 +8,17 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { LoginModule } from './login/login.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BootstrapModule,
-    DashboardModule,
-    LoginModule
-  ]
+    declarations: [
+        AppComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BootstrapModule,
+        DashboardModule,
+        LoginModule
+    ]
 })
 export class AppModule { }
