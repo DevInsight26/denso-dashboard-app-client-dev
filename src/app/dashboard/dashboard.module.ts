@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { BootstrapModule } from '../bootstrap.module';
 import { DashboardComponent } from './dashboard.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
     declarations: [
@@ -15,7 +16,8 @@ import { DashboardComponent } from './dashboard.component';
     imports: [
         CommonModule,
         DashboardRoutingModule,
-        BootstrapModule
+        BootstrapModule,
+        NgChartsModule,
     ]
 })
 export class DashboardModule { }
