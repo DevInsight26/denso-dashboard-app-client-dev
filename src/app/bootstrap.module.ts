@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
     declarations: [],
-    imports: [NgbModule],
+    imports: [
+        NgbModule,
+        NgbDropdownModule
+    ],
 })
 export class BootstrapModule {}

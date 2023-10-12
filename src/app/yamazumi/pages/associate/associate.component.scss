@@ -1,0 +1,38 @@
+.select-week,
+.select-name{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.select-name{
+    .ass-name{
+        border: 1px solid black;
+        padding: .25rem .5rem;
+    }
+}
+
+.calendar{
+    padding: .25rem .5rem;
+    border: 1px solid black;
+}
+
+.filter{
+    table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table{
+        th, td{
+            padding: .25rem .5rem;
+        }
+    }
+}
+
+.dropdown-button{
+    outline: none;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: .25rem .5rem;
+}
