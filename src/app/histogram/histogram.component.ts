@@ -12,8 +12,16 @@ export class HistogramComponent {
 
   public barChartData: ChartConfiguration<'bar'>['data'] = {
       labels: [ '- 450', '451 - 500', '501 - 55-', '551 - 600', '601 - 650', '651 - 700', '701 - 750', '751 - 800', '801 -',],
-      datasets: [
-          { data: [ 2, 3, 4, 7, 8, 7, 1, 1, 1 ], label: 'Actual Duration' },
-      ]
+      datasets: [{ 
+        data: [ 2, 3, 4, 7, 8, 7, 1, 1, 1 ], 
+        label: 'Actual Duration' ,
+        backgroundColor: [
+          'rgba(75, 192, 192, 0.2)',
+        ],
+        borderColor: [
+          'rgb(75, 192, 192)',
+        ],
+        borderWidth: 1,
+      },]
   };
 }
