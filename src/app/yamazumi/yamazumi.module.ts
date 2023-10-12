@@ -1,18 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PagesModule } from './pages/pages.module';
 import { BootstrapModule } from '../bootstrap.module';
+import { NgChartsModule } from 'ng2-charts';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { AssociateComponent } from './pages/associate/associate.component';
+import { ComparisonComponent } from './pages/comparison/comparison.component';
 
 @NgModule({
   declarations: [
-
+    ComparisonComponent
   ],
   exports: [
+    ComparisonComponent
   ],
   imports: [
-    PagesModule,
     CommonModule,
     BootstrapModule,
+    NgChartsModule,
+    NgbDropdownModule,
+    NgChartsModule
   ]
 })
 export class YamazumiModule { }

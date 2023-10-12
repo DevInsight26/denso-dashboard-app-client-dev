@@ -1,16 +1,23 @@
 import { Component } from '@angular/core';
-import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDropdown, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { Chart } from 'chart.js';
 import { ChartConfiguration } from 'chart.js';
 import { NgChartsModule } from 'ng2-charts';
 
 @Component({
   selector: 'app-associate',
   standalone: true,
-  imports: [NgbDropdownModule, NgChartsModule],
+  imports: [NgChartsModule, NgbDropdownModule],
   templateUrl: './associate.component.html',
   styleUrls: ['./associate.component.scss']
 })
 export class AssociateComponent {
+  // isVisible: boolean = true;
+
+  // toggleGraph() {
+  //   this.isVisible = !this.isVisible;
+  // }
+
   public barChartLegend = true;
   public barChartPlugins = [];
 
