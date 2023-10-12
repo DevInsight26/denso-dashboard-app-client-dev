@@ -9,6 +9,7 @@ import { LoginModule } from './login/login.module';
 import { NgChartsModule } from 'ng2-charts';
 import { LayoutComponent } from './shared/layout/layout.component';
 import { SharedModule } from './shared/shared.module';
+import { YamazumiModule } from './yamazumi/yamazumi.module';
 @NgModule({
     declarations: [AppComponent],
     providers: [],
@@ -18,6 +19,7 @@ import { SharedModule } from './shared/shared.module';
         AppRoutingModule,
         BootstrapModule,
         DashboardModule,
+        YamazumiModule,
         LoginModule,
         NgChartsModule,
         SharedModule

@@ -35,15 +35,17 @@
             </div>
         </div>
 
-        <button>Search</button>
+        <button (click)="toggleGraph()">Search</button>
     </div>
     
     <p class="fw-bold text-primary my-3 text-center">Showing Results between 2023/5/1 to 2023/5/7</p>
 
-    <canvas baseChart
-        [data]="barChartData"
-        [plugins]="barChartPlugins"
-        [legend]="barChartLegend"
-        [type]="'bar'">
-    </canvas>
+    <ng-container *ngIf="isVisible">
+        <canvas baseChart
+            [data]="barChartData"
+            [plugins]="barChartPlugins"
+            [legend]="barChartLegend"
+            [type]="'bar'">
+        </canvas>
+    </ng-container>
 </main>

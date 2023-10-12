@@ -8,9 +8,11 @@ import { ComparisonComponent } from './pages/comparison/comparison.component';
 
 @NgModule({
   declarations: [
+    AssociateComponent,
     ComparisonComponent
   ],
   exports: [
+    AssociateComponent,
     ComparisonComponent
   ],
   imports: [
