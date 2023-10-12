@@ -18,7 +18,6 @@ import { ComparisonComponent } from './pages/comparison/comparison.component';
   imports: [
     CommonModule,
     BootstrapModule,
-    NgChartsModule,
     NgbDropdownModule,
     NgChartsModule
   ]
