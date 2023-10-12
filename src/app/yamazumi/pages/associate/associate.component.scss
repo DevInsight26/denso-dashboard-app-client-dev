@@ -19,6 +19,13 @@
             background-color: rgba($color: #ccc, $alpha: .5);
         }
     }
+
+    button.dropdown-item{
+        border: none;
+        &:active{
+            background-color: rgba($color: green, $alpha: 1);
+        }
+    }
 }
 
 .calendar{
