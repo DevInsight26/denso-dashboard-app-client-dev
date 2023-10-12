@@ -70,12 +70,12 @@
             </div>
         </div>
 
-        <span class="plot">
+        <button class="plot" (click)="toggleGraph()">
             Plot Histogram
-        </span>
+        </button>
     </div>
 
-    <ng-container>
+    <ng-container *ngIf="isVisible">
         <p class="fw-bold text-primary my-3 text-center">Showing Results between 2023/5/1 to 2023/5/7</p>
 
         <canvas baseChart

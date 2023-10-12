@@ -7,6 +7,12 @@ import { ChartConfiguration } from 'chart.js';
   styleUrls: ['./comparison.component.scss']
 })
 export class ComparisonComponent {
+  isVisible: boolean = false;
+
+  toggleGraph() {
+    this.isVisible = true;
+  }
+  
   public barChartLegend = true;
   public barChartPlugins = [];
 

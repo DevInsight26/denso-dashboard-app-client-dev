@@ -41,22 +41,22 @@
             <i class="bi bi-people-fill"></i>
         </span>
 
-        <button>Compare</button>
+        <button class="compare" (click)="toggleGraph()">Compare</button>
     </div>
 
-    <div class="ass-list mt-3">
-        <table>
-            <tr>
-                <th>Diola Norman</th>
-                <th>Lopez Maria</th>
-                <th>Ovejas Rommel</th>
-                <th>Cinco Lemuel</th>
-                <th>Cayanes Kurt</th>
-            </tr>
-        </table>
-    </div>
+    <ng-container *ngIf="isVisible">
+        <div class="ass-list mt-3">
+            <table>
+                <tr>
+                    <th>Diola Norman</th>
+                    <th>Lopez Maria</th>
+                    <th>Ovejas Rommel</th>
+                    <th>Cinco Lemuel</th>
+                    <th>Cayanes Kurt</th>
+                </tr>
+            </table>
+        </div>
 
-    <ng-container>
         <p class="fw-bold text-primary my-3 text-center">Showing Results between 2023/5/1 to 2023/5/7</p>
 
         <canvas baseChart

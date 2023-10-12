@@ -7,6 +7,12 @@ import { ChartConfiguration } from 'chart.js';
   styleUrls: ['./histogram.component.scss']
 })
 export class HistogramComponent {
+  isVisible: boolean = false;
+
+  toggleGraph() {
+    this.isVisible = true;
+  }
+  
   public barChartLegend = true;
   public barChartPlugins = [];
 
