@@ -65,8 +65,9 @@ $color-sent: rgb(255, 255, 80);
 $color-stack-1: pink;
 $color-stack-2: #39cccc;
 $color-stack-3: lightgreen;
+$color-stack-4: #ccc;
 
-.bar-container{
+.bar-container {
     display: flex;
     justify-content: center;
 }
@@ -180,7 +181,7 @@ $color-stack-3: lightgreen;
     border-color: transparent;
 }
 
-#q-graph .sent-2{
+#q-graph .sent-2 {
     left: 13px;
     bottom: 100px;
     background-color: $color-stack-1;
@@ -201,6 +202,34 @@ $color-stack-3: lightgreen;
     border-color: transparent;
 }
 
+#q-graph .others {
+    left: 13px;
+    bottom: 434px;
+    background-color: $color-stack-4;
+    border-color: transparent;
+}
+
+#q-graph .others-2 {
+    left: 13px;
+    bottom: 404px;
+    background-color: $color-stack-4;
+    border-color: transparent;
+}
+
+#q-graph .others-3 {
+    left: 13px;
+    bottom: 44px;
+    background-color: $color-stack-4;
+    border-color: transparent;
+}
+
+#q-graph .others-4 {
+    left: 13px;
+    bottom: 364px;
+    background-color: $color-stack-4;
+    border-color: transparent;
+}
+
 #q-graph .paid {
     left: 77px;
     background-color: $color-paid;
@@ -216,14 +245,14 @@ $color-stack-3: lightgreen;
 
 #q-graph .paid-3 {
     left: 77px;
-    bottom: 140px;
+    bottom: 190px;
     background-color: $color-stack-2;
     border-color: transparent;
 }
 
 #q-graph .paid-4 {
     left: 77px;
-    bottom: 230px;
+    bottom: 280px;
     background-color: $color-stack-3;
     border-color: transparent;
 }
