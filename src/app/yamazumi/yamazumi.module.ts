@@ -5,6 +5,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { AssociateComponent } from './pages/associate/associate.component';
 import { ComparisonComponent } from './pages/comparison/comparison.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,8 +19,8 @@ import { ComparisonComponent } from './pages/comparison/comparison.component';
   imports: [
     CommonModule,
     BootstrapModule,
-    NgbDropdownModule,
-    NgChartsModule
+    NgChartsModule,
+    SharedModule
   ]
 })
 export class YamazumiModule { }

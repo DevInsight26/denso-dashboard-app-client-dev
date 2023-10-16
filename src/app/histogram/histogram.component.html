@@ -35,40 +35,23 @@
 
     <div class="select-name">
         <span>Associate Name:</span>
-        <div ngbDropdown class="d-inline-block">
-            <button type="button" class="dropdown-button" id="shift" ngbDropdownToggle>
-                Select Associate
-            </button>
-            <div ngbDropdownMenu aria-labelledby="shift">
-                <button class="dropdown-item" ngbDropdownItem>(All)</button>
-                <button class="dropdown-item" ngbDropdownItem>Ace Gabriel P. Pasiliao</button>
-                <button class="dropdown-item" ngbDropdownItem>Jonas Villamar</button>
-            </div>
-        </div>
+        <app-dropdown
+        [buttonLabel]="'Select Associate'"
+        [options]="['(All)', 'Ace Gabriel P. Pasiliao', 'Jonas Villamar']"
+        ></app-dropdown>
         <span>Shift Type:</span>
-        <div ngbDropdown class="d-inline-block">
-            <button type="button" class="dropdown-button" id="shift" ngbDropdownToggle>
-                Select Shift
-            </button>
-            <div ngbDropdownMenu aria-labelledby="shift">
-                <button class="dropdown-item" ngbDropdownItem>Day Shift</button>
-                <button class="dropdown-item" ngbDropdownItem>Night Shift</button>
-            </div>
-        </div>
+        <app-dropdown
+        [buttonLabel]="'Select Shift'"
+        [options]="['Day Shift', 'Night Shift']"
+        ></app-dropdown>
     </div>
 
     <div class="select-name my-3">
         <span>Work Class:</span>
-        <div ngbDropdown class="d-inline-block">
-            <button type="button" class="dropdown-button" id="shift" ngbDropdownToggle>
-                Select Associate
-            </button>
-            <div ngbDropdownMenu aria-labelledby="shift">
-                <button class="dropdown-item" ngbDropdownItem>(All)</button>
-                <button class="dropdown-item" ngbDropdownItem>Ace Gabriel P. Pasiliao</button>
-                <button class="dropdown-item" ngbDropdownItem>Jonas Villamar</button>
-            </div>
-        </div>
+        <app-dropdown
+        [buttonLabel]="'Select Associate'"
+        [options]="['(All)', 'Ace Gabriel P. Pasiliao', 'Jonas Villamar']"
+        ></app-dropdown>
 
         <button class="plot" (click)="toggleGraph()">
             Plot Histogram

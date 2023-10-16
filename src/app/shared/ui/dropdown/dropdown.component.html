@@ -1,0 +1,8 @@
+<div ngbDropdown class="d-inline-block">
+    <button type="button" class="dropdown-button" id="shift" ngbDropdownToggle>
+        {{ buttonLabel }}
+    </button>
+    <div ngbDropdownMenu aria-labelledby="shift">
+        <button class="dropdown-item" ngbDropdownItem *ngFor="let option of options" >{{ option }}</button>
+    </div>
+</div>

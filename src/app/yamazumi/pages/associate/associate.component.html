@@ -22,18 +22,13 @@
     <div class="select-name">
         <span>Associate Name:</span>
         <span class="fw-bold ass-name">
-            Diola Norman
+            Guiller Garcia
         </span>
         <span>Shift Type:</span>
-        <div ngbDropdown class="d-inline-block">
-            <button type="button" class="dropdown-button" id="shift" ngbDropdownToggle>
-                Select Shift
-            </button>
-            <div ngbDropdownMenu aria-labelledby="shift">
-                <button class="dropdown-item" ngbDropdownItem>Day Shift</button>
-                <button class="dropdown-item" ngbDropdownItem>Night Shift</button>
-            </div>
-        </div>
+        <app-dropdown
+        [buttonLabel]="'Select Shift'"
+        [options]="['Day Shift', 'Night Shift']"
+        ></app-dropdown>
 
         <button class="search" (click)="toggleGraph()">Search</button>
     </div>
