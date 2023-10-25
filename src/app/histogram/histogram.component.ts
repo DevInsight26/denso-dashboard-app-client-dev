@@ -24,8 +24,8 @@ export class HistogramComponent {
       backgroundColor: 'rgba(75, 192, 192, 0.2)',
       borderColor: 'rgb(75, 192, 192)',
       borderWidth: 1,
-      barPercentage: 1, // Set the bar width to 100% of the available space
-      categoryPercentage: 1, // Remove the spacing between bars
+      barPercentage: 1,
+      categoryPercentage: 1, 
     }]
   };
 }

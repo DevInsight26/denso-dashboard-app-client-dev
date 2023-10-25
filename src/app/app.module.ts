@@ -12,8 +12,9 @@ import { SharedModule } from './shared/shared.module';
 import { YamazumiModule } from './yamazumi/yamazumi.module';
 import { HistogramComponent } from './histogram/histogram.component';
 import { HistogramModule } from './histogram/histogram.module';
+import { MaintenanceModule } from './maintenance/maintenance.module';
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, ],
     providers: [],
     bootstrap: [AppComponent],
     imports: [
@@ -25,7 +26,8 @@ import { HistogramModule } from './histogram/histogram.module';
         LoginModule,
         NgChartsModule,
         SharedModule,
-        HistogramModule
+        HistogramModule,
+        MaintenanceModule
     ],
 })
 export class AppModule {}
