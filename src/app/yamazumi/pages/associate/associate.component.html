@@ -3,17 +3,47 @@
 
     <div class="select-week my-3">
         <span>Select a week: </span>
-        <span class="calendar">
+        <span class="calendar" (click)="datepicker.toggle()">
             <i class="bi bi-calendar-event"></i>
         </span>
 
         <div class="filter">
+            <div>
+                <div class="input-group">
+                    <input
+                        name="datepicker"
+                        class="calendar-input"
+                        ngbDatepicker
+                        #datepicker="ngbDatepicker"
+                        [autoClose]="'outside'"
+                        (dateSelect)="onDateSelection($event)"
+                        [displayMonths]="2"
+                        [dayTemplate]="t"
+                        outsideDays="hidden"
+                        [startDate]="fromDate!"
+                        tabindex="-1"
+                    />
+                    <ng-template #t let-date let-focused="focused">
+                        <span
+                            class="custom-day"
+                            [class.focused]="focused"
+                            [class.range]="isRange(date)"
+                            [class.faded]="isHovered(date) || isInside(date)"
+                            (mouseenter)="hoveredDate = date"
+                            (mouseleave)="hoveredDate = null"
+                        >
+                            {{ date.day }}
+                        </span>
+                    </ng-template>
+                </div>
+            </div>
+
             <table>
                 <tr>
-                    <td>Start Date</td>
-                    <th>2023/5/1(Mon)</th>
-                    <td>End Date</td>
-                    <th>2023/5/7 (Sun)</th>
+                    <th>Start Date</th>
+                    <td> {{ formatter.format(fromDate) }} </td>
+                    <th>End Date</th>
+                    <td> {{ formatter.format(toDate) }} </td>
                 </tr>
             </table>
         </div>
@@ -26,13 +56,12 @@
         </span>
         <span>Shift Type:</span>
         <app-dropdown
-        [buttonLabel]="'Select Shift'"
         [options]="['Day Shift', 'Night Shift']"
         ></app-dropdown>
 
         <button class="search" (click)="toggleGraph()">Search</button>
     </div>
-    
+
     <ng-container *ngIf="isVisible">
         <p class="fw-bold text-primary my-3 text-center">Showing Results between 2023/5/1 to 2023/5/7</p>
         <div class="bar-container">

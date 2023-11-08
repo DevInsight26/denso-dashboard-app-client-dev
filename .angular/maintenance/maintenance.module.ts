@@ -5,16 +5,14 @@ import { MaintenanceRoutingModule } from './maintenance-routing.module';
 import { GroupMasterComponent } from './pages/group-master/group-master.component';
 import { BootstrapModule } from '../bootstrap.module';
 import { SharedModule } from '../shared/shared.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { PartMasterComponent } from './pages/part-master/part-master.component';
-import { ProductModelMasterComponent } from './pages/product-model-master/product-model-master.component';
-import { HttpClientModule } from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
     GroupMasterComponent,
-    PartMasterComponent,
-    ProductModelMasterComponent
+    PartMasterComponent
   ],
   exports: [
     GroupMasterComponent,
@@ -25,8 +23,7 @@ import { HttpClientModule } from '@angular/common/http'
     MaintenanceRoutingModule,
     SharedModule,
     BootstrapModule,
-    ReactiveFormsModule,
-    HttpClientModule
+    ReactiveFormsModule
   ],
   providers: [DecimalPipe],
 })

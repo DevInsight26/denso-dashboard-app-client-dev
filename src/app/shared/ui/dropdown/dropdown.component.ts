@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
 export class DropdownComponent {
   @Input() buttonLabel: String = '';
   @Input() options: string[] = [];
-
+  @Input() width: string = 'auto';
 }

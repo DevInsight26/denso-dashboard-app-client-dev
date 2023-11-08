@@ -3,16 +3,20 @@ import { CommonModule } from '@angular/common';
 import { LayoutModule } from './layout/layout.module';
 import { DropdownComponent } from './ui/dropdown/dropdown.component';
 import { BootstrapModule } from '../bootstrap.module';
+import { ButtonComponent } from './ui/button/button.component';
 
 
 
 @NgModule({
   declarations: [
-    DropdownComponent
+    DropdownComponent,
+    ButtonComponent,
+    ButtonComponent
   ],
   exports: [
     LayoutModule,
-    DropdownComponent
+    DropdownComponent,
+    ButtonComponent
   ],
   imports: [
     CommonModule,

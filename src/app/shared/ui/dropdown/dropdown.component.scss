@@ -1,12 +1,5 @@
-button{
-    border: 1px solid black;
+select{
     background-color: transparent;
-    padding: .25rem .5rem;
-}
-
-button.dropdown-item{
-    border: none;
-    &:active{
-        background-color: rgba($color: green, $alpha: 1);
-    }
+    border: 1px solid black;
+    padding: .35rem .5rem;
 }
