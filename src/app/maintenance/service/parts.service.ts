@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { PartMasterTableInterface } from '../model/part-master-table-interface';
+import { Constants } from 'src/app/shared/constants/constant';
 
 @Injectable({
   providedIn: 'root'
@@ -14,14 +13,15 @@ export class PartsService {
 
 
   loadParts(){
-    return this.http.get('http://localhost:5000/api/geo/v1/parts');
+    return this.http.get(Constants.productionApiUrl);
   }
+  // https://denso-backend.onrender.com/api/geo/v1/parts
 
   postParts(data: any){
-    return this.http.post('http://localhost:5000/api/geo/v1/parts/', data);
+    return this.http.post(Constants.productionApiUrl, data);
   }
 
   deleteParts(_id: any){
-    return this.http.delete('http://localhost:5000/api/geo/v1/parts/', _id)
+    return this.http.delete(Constants.productionApiUrl, _id)
   }
 }
